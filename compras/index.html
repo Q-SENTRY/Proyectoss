@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="es"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
-<meta name="theme-color" content="#5b5bf6"><link rel="manifest" href="manifest.json"><link rel="icon" href="icon.svg">
+<meta name="theme-color" content="#1e40af"><link rel="manifest" href="manifest.json"><link rel="icon" href="icon.svg">
 <meta name="apple-mobile-web-app-capable" content="yes"><title>Mis Compras</title>
 <style>
-:root{--bg:#f4f5fb;--card:#fff;--tx:#17172a;--mu:#80809a;--pr:#5b5bf6;--pr2:#8b5cf6;--ok:#16b47c;--rd:#ff4d5e;--bd:#e7e7f1;--sh:0 2px 10px #1b1b4b0f;--ease:cubic-bezier(.2,.9,.3,1.2)}
+:root{--bg:#f4f5fb;--card:#fff;--tx:#17172a;--mu:#80809a;--pr:#1e40af;--pr2:#0f172a;--ok:#16b47c;--rd:#ff4d5e;--bd:#e7e7f1;--sh:0 2px 10px #1b1b4b0f;--ease:cubic-bezier(.2,.9,.3,1.2)}
 @media(prefers-color-scheme:dark){:root{--bg:#0f0f17;--card:#1b1b27;--tx:#f2f2f8;--mu:#9a9ab3;--bd:#2b2b3b;--sh:0 2px 10px #0006}}
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{overscroll-behavior:none}
@@ -43,7 +43,7 @@ main{padding:16px;display:grid;gap:10px}
 .n{font-weight:650;font-size:16px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;transition:color .3s}
 .m{font-size:13px;color:var(--mu);margin-top:4px;display:flex;gap:6px;align-items:center;overflow:hidden;white-space:nowrap}
 .m .nt{overflow:hidden;text-overflow:ellipsis}
-.lk{display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:8px;background:#5b5bf61a;color:var(--pr);font-weight:600;font-size:12px;text-decoration:none;flex:none;max-width:150px;overflow:hidden;text-overflow:ellipsis}
+.lk{display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:8px;background:#1e40af1a;color:var(--pr);font-weight:600;font-size:12px;text-decoration:none;flex:none;max-width:150px;overflow:hidden;text-overflow:ellipsis}
 .p{font-weight:700;font-size:15px;white-space:nowrap;text-align:right}.p small{display:block;color:var(--mu);font-weight:500;font-size:11px}
 .ck{width:30px;height:30px;border-radius:50%;border:2px solid var(--bd);flex:none;background:none;display:grid;place-items:center;padding:0;transition:.3s var(--ease)}
 .ck svg{width:16px;height:16px;stroke:#fff;stroke-width:3;fill:none;stroke-dasharray:24;stroke-dashoffset:24;transition:stroke-dashoffset .35s .1s}
@@ -55,7 +55,7 @@ main{padding:16px;display:grid;gap:10px}
 .empty h3{color:var(--tx);margin:10px 0 4px}
 .hint{text-align:center;font-size:12px;color:var(--mu);margin-top:4px}
 /* Botón flotante */
-.fab{position:fixed;right:20px;bottom:calc(24px + env(safe-area-inset-bottom));height:60px;padding:0 24px 0 20px;border-radius:20px;border:0;background:linear-gradient(135deg,var(--pr),var(--pr2));color:#fff;font-size:16px;font-weight:700;display:flex;align-items:center;gap:8px;box-shadow:0 10px 28px #5b5bf670;z-index:6;transition:transform .3s var(--ease)}
+.fab{position:fixed;right:20px;bottom:calc(24px + env(safe-area-inset-bottom));height:60px;padding:0 24px 0 20px;border-radius:20px;border:0;background:linear-gradient(135deg,var(--pr),var(--pr2));color:#fff;font-size:16px;font-weight:700;display:flex;align-items:center;gap:8px;box-shadow:0 10px 28px #1e40af70;z-index:6;transition:transform .3s var(--ease)}
 .fab span{font-size:28px;line-height:0;transition:transform .4s var(--ease)}.fab:active span{transform:rotate(90deg)}
 /* Hoja inferior */
 .ov{position:fixed;inset:0;background:#0b0b1a80;opacity:0;pointer-events:none;transition:opacity .3s;z-index:10}
@@ -77,7 +77,7 @@ main{padding:16px;display:grid;gap:10px}
 .step input{text-align:center;padding:0;background:none!important;border:0!important;height:100%}
 .act{display:flex;gap:10px;margin-top:20px}
 .act button{flex:1;padding:15px;border-radius:16px;border:0;font-size:16px;font-weight:700}
-.sv{background:linear-gradient(135deg,var(--pr),var(--pr2));color:#fff;box-shadow:0 6px 18px #5b5bf650}
+.sv{background:linear-gradient(135deg,var(--pr),var(--pr2));color:#fff;box-shadow:0 6px 18px #1e40af50}
 .dl{background:#ff4d5e1a;color:var(--rd);flex:0 0 56px!important}
 .op{background:#16b47c1a;color:var(--ok)}
 /* Aviso */
@@ -86,7 +86,7 @@ main{padding:16px;display:grid;gap:10px}
 .toast button{margin-left:auto;border:0;background:none;color:#a9a9ff;font-weight:700;font-size:15px}
 </style></head><body>
 <div class="hero">
-  <h1>🛍️ Mis Compras</h1><div class="sub" id="greet">Tu lista de deseos y compras</div>
+  <h1><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-4px;margin-right:6px"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6"/></svg>Mis Compras</h1><div class="sub" id="greet">Tu lista de deseos y compras</div>
   <div class="stats">
     <div class="st"><b id="sPend">0</b><span>Por comprar</span></div>
     <div class="st"><b id="sTot">$0</b><span>Total pendiente</span></div>
@@ -168,7 +168,7 @@ function removeEl(id,cb){const el=document.querySelector(`.sw[data-id="${id}"]`)
 function toggle(i){i.done=!i.done;persist();buzz(i.done?[10,40,20]:10);
   const el=document.querySelector(`.sw[data-id="${i.id}"] .it`);el&&el.classList.toggle('done',i.done);stats();
   if(filt!='all')setTimeout(()=>removeEl(i.id,()=>render(false)),450);
-  toast(i.done?'¡Marcada como comprada! 🎉':'Movida a pendientes',()=>{i.done=!i.done;persist();render()})}
+  toast(i.done?'Marcada como comprada ✓':'Movida a pendientes',()=>{i.done=!i.done;persist();render()})}
 function del(i){const idx=items.indexOf(i);buzz(30);removeEl(i.id,()=>{items.splice(idx,1);persist();render(false)});
   toast('Producto eliminado',()=>{items.splice(idx,0,i);persist();render()})}
 
@@ -187,7 +187,7 @@ f.onsubmit=e=>{e.preventDefault();const name=f.name.value.trim();
   if(!name){const x=$('#fName');x.classList.remove('err');void x.offsetWidth;x.classList.add('err');buzz(60);f.name.focus();return}
   const d={name,url:fixUrl(f.url.value.trim()),price:parseFloat(f.price.value)||0,qty:parseInt(f.qty.value)||1,note:f.note.value.trim()};
   if(edit)Object.assign(edit,d);else{items.unshift({id:Date.now(),done:false,...d});if(filt=='done')setTab('pend')}
-  persist();close();buzz([10,30,10]);render();toast(edit?'Cambios guardados':'¡Añadido a tu lista! 🛍️')};
+  persist();close();buzz([10,30,10]);render();toast(edit?'Cambios guardados':'Añadido a tu lista ✓')};
 /* Arrastrar la hoja hacia abajo para cerrar */
 let sy=null;f.addEventListener('touchstart',e=>{if(f.scrollTop<=0&&e.target.closest('.grab,h2'))sy=e.touches[0].clientY},{passive:true});
 f.addEventListener('touchmove',e=>{if(sy==null)return;const d=Math.max(0,e.touches[0].clientY-sy);f.style.transition='none';f.style.transform=`translateY(${d}px)`},{passive:true});
@@ -214,7 +214,7 @@ $('#list').addEventListener('touchend',()=>{if(!drag)return;const {sw,it,dx}=dra
   setTimeout(()=>{sw.querySelectorAll('.bgL,.bgR').forEach(b=>b.style.opacity=0);delete sw.dataset.moved},300);
   if(dx>90)toggle(i);else if(dx<-90)del(i)});
 
-const h=new Date().getHours();$('#greet').textContent=(h<12?'Buenos días':h<19?'Buenas tardes':'Buenas noches')+' 👋 ¿Qué compramos hoy?';
+const h=new Date().getHours();$('#greet').textContent=(h<12?'Buenos días':h<19?'Buenas tardes':'Buenas noches')+' · ¿Qué compramos hoy?';
 render();
 if('serviceWorker'in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('sw.js');
 </script></body></html>

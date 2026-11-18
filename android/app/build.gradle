@@ -2,6 +2,8 @@ plugins { id 'com.android.application' }
 android {
   namespace 'com.miscompras.app'
   compileSdk 34
-  defaultConfig { applicationId 'com.miscompras.app'; minSdk 24; targetSdk 34; versionCode 1; versionName '1.0' }
+  signingConfigs { fixed { storeFile file('release.jks'); storePassword 'compras123'; keyAlias 'compras'; keyPassword 'compras123' } }
+  defaultConfig { applicationId 'com.miscompras.app'; minSdk 24; targetSdk 34; versionCode 3; versionName '1.2' }
+  buildTypes { debug { signingConfig signingConfigs.fixed } }
   compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
 }

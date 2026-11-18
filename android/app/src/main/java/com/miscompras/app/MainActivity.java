@@ -10,7 +10,7 @@ public class MainActivity extends Activity {
   private WebView web;
   @Override protected void onCreate(Bundle b) {
     super.onCreate(b);
-    getWindow().setStatusBarColor(0xFF5B5BF6);
+    getWindow().setStatusBarColor(0xFF1E40AF);
     web = new WebView(this);
     WebSettings s = web.getSettings();
     s.setJavaScriptEnabled(true);
